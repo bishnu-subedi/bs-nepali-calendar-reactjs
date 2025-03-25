@@ -1,12 +1,12 @@
 {
-	"name": "@sbmdkl/nepali-datepicker-reactjs",
-	"version": "1.2.2",
-	"description": "Nepali Datepicker Reactjs",
-	"author": "Shubham Dhakal",
+	"name": "bs-nepali-calendar-reactjs",
+	"version": "1.0.0",
+	"description": "Nepali datepicker component - ReactJS",
+	"author": "Bishnu Subedi",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sbmdkl/nepali-datepicker-reactjs.git"
+		"url": "https://github.com/bishnu-subedi/bs-nepali-calendar-reactjs.git"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.modern.js",
