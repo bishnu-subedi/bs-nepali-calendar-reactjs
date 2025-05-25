@@ -33,4 +33,4 @@ function evaluateNepaliDate(daysElpased) {
 	return { currentYear, currentMonth, currentDay };
 }
 
-export default adToBs;
+export { adToBs };

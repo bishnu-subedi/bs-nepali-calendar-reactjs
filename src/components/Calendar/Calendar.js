@@ -13,7 +13,7 @@ import {
 } from '../../utils/Config';
 import Header from '../Header';
 import NameOfDays from '../NameOfDays';
-import adToBs from '../../utils/AdToBs';
+import { adToBs } from '../../utils/AdToBs';
 import bsToAd from '../../utils/BsToAd';
 import styles from './Calendar.module.css';
 import RenderCalendar from './RenderCalendar';
