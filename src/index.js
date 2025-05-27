@@ -1,4 +1,4 @@
 import Calendar from './components/Calendar/Calendar';
-import { adToBs } from './utils/AdToBs';
+import { adToBs, adToBsForDate } from './utils/AdToBs';
 
-export { Calendar, adToBs };
+export { Calendar, adToBs, adToBsForDate };

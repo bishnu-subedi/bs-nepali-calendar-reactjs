@@ -9,6 +9,13 @@ function adToBs() {
 	return evaluateNepaliDate(daysDifference);
 }
 
+function adToBsForDate(inputDate) {
+    const startDate = new Date('1943-04-14');
+    const dateToConvert = new Date(inputDate); // Convert input date to Date object
+    const daysDifference = Math.floor((dateToConvert.getTime() - startDate.getTime()) / 86400000);
+    return evaluateNepaliDate(daysDifference);
+}
+
 function evaluateNepaliDate(daysElpased) {
 	let currentYear = 0;
 	let currentMonth = 0;
@@ -33,4 +40,4 @@ function evaluateNepaliDate(daysElpased) {
 	return { currentYear, currentMonth, currentDay };
 }
 
-export { adToBs };
+export { adToBs, adToBsForDate };
