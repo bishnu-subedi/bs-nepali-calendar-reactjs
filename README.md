@@ -117,19 +117,22 @@ console.log('Converted Nepali Date:', nepaliDate);
 // Output: { currentYear: 2080, currentMonth: 2, currentDay: 11 }
 ```
 
-The `adToBsForDate` method converts an AD date to a formatted BS date string. Here's an example:
+The `adToBsForDate` method converts an AD date to a Nepali (BS) date object. You can format the returned object into a string for display. Here's an example:
 
 ```javascript
 import { adToBsForDate } from 'bs-nepali-calendar-reactjs';
 
 const englishDate = '2023-05-25'; // Example AD date
-const formattedNepaliDate = adToBsForDate(englishDate, 'YYYY-MM-DD');
+const nepaliDateObject = adToBsForDate(englishDate);
+
+// Format the returned object into a string
+const formattedNepaliDate = `${nepaliDateObject.currentYear}-${String(nepaliDateObject.currentMonth).padStart(2, '0')}-${String(nepaliDateObject.currentDay).padStart(2, '0')}`;
 
 console.log('Formatted Nepali Date:', formattedNepaliDate);
 // Output: '2080-02-11'
 ```
 
-This method is useful for scenarios where you need a formatted BS date string directly.
+This method is useful for scenarios where you need a formatted BS date string or the individual components of the BS date (year, month, day).
 
 ## Props
 
