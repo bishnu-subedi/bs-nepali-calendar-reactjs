@@ -103,7 +103,7 @@ function App() {
 export default App;
 ```
 
-### Using the `adToBs` Method
+### Using the `adToBs` and `adToBsForDate` Methods
 
 The `adToBs` method allows you to convert an English (AD) date to a Nepali (BS) date programmatically. Here's how to use it:
 
@@ -117,7 +117,19 @@ console.log('Converted Nepali Date:', nepaliDate);
 // Output: { currentYear: 2080, currentMonth: 2, currentDay: 11 }
 ```
 
-This method is useful for scenarios where you need to perform date conversions without rendering the calendar component.
+The `adToBsForDate` method converts an AD date to a formatted BS date string. Here's an example:
+
+```javascript
+import { adToBsForDate } from 'bs-nepali-calendar-reactjs';
+
+const englishDate = '2023-05-25'; // Example AD date
+const formattedNepaliDate = adToBsForDate(englishDate, 'YYYY-MM-DD');
+
+console.log('Formatted Nepali Date:', formattedNepaliDate);
+// Output: '2080-02-11'
+```
+
+This method is useful for scenarios where you need a formatted BS date string directly.
 
 ## Props
 
